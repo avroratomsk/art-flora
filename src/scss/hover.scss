@@ -1,0 +1,87 @@
+@media (hover: hover) {
+  .nav__link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 0%;
+      height: 1px;
+      transition: $animation_speed;
+      background-color: #4d6469;
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .header__link {
+    &:hover {
+      svg,
+      path {
+        fill: red;
+      }
+    }
+
+    &--favorit,
+    &--cart,
+    &--login,
+    &--search {
+      &:hover {
+        svg,
+        path {
+          //   fill: #500a1d;
+          fill: #000;
+        }
+      }
+    }
+  }
+
+  .aside-menu__link {
+    &:not(.aside-menu__link--active) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 0%;
+        height: 1px;
+        background-color: #4d6469;
+        transition: $animation_speed;
+      }
+      &:hover {
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .aside-menu__content {
+    &:hover {
+      &::-webkit-scrollbar {
+        background: rgba(217, 217, 217, 0.2);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05) inset;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #4d6469;
+      }
+    }
+  }
+
+  .aside-menu__bouqet {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
