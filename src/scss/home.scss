@@ -815,6 +815,7 @@
 }
 
 .small-cart {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -952,8 +953,10 @@
         outline: none;
       }
     }
+
     .minus {
     }
+
     .plus {
     }
 
@@ -976,5 +979,104 @@
     img {
       max-width: 100%;
     }
+  }
+}
+
+.about {
+  // .about__container
+
+  &__container {
+  }
+
+  // .about__inner
+
+  &__inner {
+  }
+
+  // .about__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: repeat(5, 150px);
+    gap: 30px;
+    grid-auto-flow: dense;
+  }
+
+  // .about__item
+
+  &__item {
+    max-width: 250px;
+
+    &:nth-child(1) {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+  }
+
+  // .about__title
+
+  &__title {
+    font-size: 30px;
+  }
+
+  // .about__subtitle
+
+  &__subtitle {
+    width: 100%;
+  }
+
+  // .about__link
+  &__link {
+  }
+}
+
+.reviews {
+  // .reviews__card
+
+  &__card {
+  }
+
+  // .reviews__quotes
+
+  &__quotes {
+    // font-size: 200px;
+    font-family: $secondaryFont;
+  }
+
+  // .reviews__text
+
+  &__text {
+  }
+
+  // .reviews__bottom
+
+  &__bottom {
+  }
+
+  // .reviews__thumb
+
+  &__thumb {
+    width: 92px;
+    height: 92px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .reviews__data
+
+  &__data {
+  }
+
+  // .reviews__name
+
+  &__name {
+  }
+
+  // .reviews__from
+
+  &__from {
   }
 }

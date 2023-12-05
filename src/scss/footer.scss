@@ -1,0 +1,140 @@
+.footer {
+  background: #262626;
+  padding: 50px 0px 0px;
+
+  // .footer__container
+
+  &__container {
+  }
+
+  // .footer__inner
+
+  &__inner {
+  }
+
+  // .footer__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+    padding-bottom: 29px;
+  }
+
+  // .footer__col
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      justify-self: end;
+      text-align: right;
+    }
+  }
+
+  // .footer__title
+
+  &__title {
+    color: $whiteFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
+  // .footer__list
+
+  &__list {
+    li {
+      a {
+        display: flex;
+        color: #aaa;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 152%;
+        margin-bottom: 11px;
+        transition: $animation_speed;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    color: #aaa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    transition: $animation_speed;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .footer__contact--item
+
+  &__contact--item {
+    color: #fff;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+
+  // .footer__socials
+
+  &__socials {
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    padding: 27px 0px;
+    border-top: 1px solid #313131;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  // .footer__author
+
+  &__author {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}
