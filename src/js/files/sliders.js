@@ -50,10 +50,10 @@ function initSliders() {
 
       // Эффекты
       // effect: 'fade',
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 6000,
+      //   disableOnInteraction: false,
+      // },
 
       // Пагинация
       pagination: {
@@ -157,25 +157,29 @@ function initSliders() {
       },
 
       // Брейкпоинты
-      // breakpoints: {
-      // 	320: {
-      // 		slidesPerView: 1,
-      // 		spaceBetween: 20,
-      // 		autoHeight: true,
-      // 	},
-      // 	485: {
-      // 		slidesPerView: 2,
-      // 		spaceBetween: 20,
-      // 	},
-      // 	992: {
-      // 		slidesPerView: 3,
-      // 		spaceBetween: 20,
-      // 	},
-      // 	1268: {
-      // 		slidesPerView: 3,
-      // 		spaceBetween: 30,
-      // 	},
-      // },
+      breakpoints: {
+      	320: {
+      		slidesPerView: 1,
+      		spaceBetween: 20,
+      		autoHeight: true,
+      	},
+      	485: {
+      		slidesPerView: 2,
+      		spaceBetween: 20,
+      	},
+      	992: {
+      		slidesPerView: 3,
+      		spaceBetween: 20,
+      	},
+      	1268: {
+      		slidesPerView: 3,
+      		spaceBetween: 60,
+      	},
+        1660: {
+      		slidesPerView: 4,
+      		spaceBetween: 60,
+      	}
+      },
       // События
       on: {
 
@@ -205,10 +209,10 @@ function initSliders() {
 
       // Эффекты
       // effect: 'fade',
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
 
       // Пагинация
       pagination: {
@@ -248,8 +252,12 @@ function initSliders() {
       // 	},
       // 	1268: {
       // 		slidesPerView: 3,
-      // 		spaceBetween: 30,
+      // 		spaceBetween: 60,
       // 	},
+      //   1660: {
+      // 		slidesPerView: 3,
+      // 		spaceBetween: 60,
+      // 	}
       // },
       // События
       on: {
@@ -306,25 +314,29 @@ function initSliders() {
       },
 
       // Брейкпоинты
-      // breakpoints: {
-      // 	320: {
-      // 		slidesPerView: 1,
-      // 		spaceBetween: 20,
-      // 		autoHeight: true,
-      // 	},
-      // 	485: {
-      // 		slidesPerView: 2,
-      // 		spaceBetween: 20,
-      // 	},
-      // 	992: {
-      // 		slidesPerView: 3,
-      // 		spaceBetween: 20,
-      // 	},
-      // 	1268: {
-      // 		slidesPerView: 3,
-      // 		spaceBetween: 30,
-      // 	},
-      // },
+      breakpoints: {
+      	320: {
+      		slidesPerView: 1,
+      		spaceBetween: 20,
+      		autoHeight: true,
+      	},
+      	485: {
+      		slidesPerView: 2,
+      		spaceBetween: 20,
+      	},
+      	992: {
+      		slidesPerView: 3,
+      		spaceBetween: 20,
+      	},
+      	1268: {
+      		slidesPerView: 3,
+      		spaceBetween: 40,
+      	},
+        1660: {
+      		slidesPerView: 3,
+      		spaceBetween: 40,
+      	}
+      },
       // События
       on: {
 

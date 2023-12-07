@@ -1,5 +1,9 @@
 .wrapper {
   margin-left: 220px;
+
+  @media screen and (max-width: 1660px) {
+    margin-left: 170px;
+  }
 }
 
 .aside-menu {
@@ -10,6 +14,10 @@
   left: 0;
   background: #fff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 1660px) {
+    width: 170px;
+  }
 
   // .aside-menu__inner
 
@@ -64,6 +72,10 @@
 
     &--active {
       color: $accent;
+    }
+
+    @media screen and (max-width: 1660px) {
+      margin: 10px 10px;
     }
   }
 
@@ -152,6 +164,10 @@
   // .index-slider__slide
   .swiper-slide {
     height: 716px;
+
+    @media screen and (max-width: 1660px) {
+      height: 550px;
+    }
   }
 
   &__slide {
@@ -225,6 +241,10 @@
     opacity: 0;
     transition: 0.8s;
     transition-delay: 0.3s;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 60px;
+    }
   }
 
   // .index-slider__subtitle
@@ -279,6 +299,11 @@
         height: 80%;
         opacity: 1;
       }
+    }
+
+    @media screen and (max-width: 1660px) {
+      height: 50px;
+      font-size: 16px;
     }
   }
 
@@ -365,6 +390,10 @@
 
   &__title {
     font-size: 30px;
+
+    @media screen and (max-width: 1160px) {
+      font-size: 27px;
+    }
   }
 
   // .section__link
@@ -390,6 +419,10 @@
 
     &:hover {
       color: $accent;
+    }
+
+    @media screen and (max-width: 1660px) {
+      font-size: 16px;
     }
   }
 
@@ -585,6 +618,10 @@
       height: calc(100% - 80px);
       bottom: 10px;
       right: 0%;
+
+      @media screen and (max-width: 1660px) {
+        right: -20%;
+      }
     }
 
     .catalog__subtitle {
@@ -608,10 +645,22 @@
       bottom: 50%;
       left: 20px;
       transform: translateY(50%);
+
+      @media screen and (max-width: 1660px) {
+        height: calc(100% - 30px);
+        bottom: 70%;
+        left: 50%;
+        transform: translateY(50%) rotate(-90deg);
+      }
     }
 
     .catalog__subtitle {
       margin-bottom: 10px;
+      text-align: right;
+    }
+
+    @media screen and (max-width: 1825px) {
+      padding: 20px;
     }
   }
 
@@ -630,10 +679,21 @@
       height: calc(100% - 40px);
       bottom: 20px;
       right: 10px;
+
+      @media screen and (max-width: 1660px) {
+        height: calc(100% - 80px);
+        bottom: 30%;
+        right: 30%;
+        transform: rotate(90deg);
+      }
     }
 
     .catalog__subtitle {
       margin-top: 10px;
+    }
+
+    @media screen and (max-width: 1660px) {
+      padding: 20px;
     }
   }
 
@@ -651,6 +711,10 @@
   &__subtitle {
     color: #4d6469;
     max-width: 188px;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 13px;
+    }
   }
 
   // .catalog__image
@@ -775,6 +839,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 30px;
+    }
   }
 
   // .blog__row
@@ -886,6 +954,10 @@
     bottom: 0;
     height: 100%;
     object-fit: contain;
+
+    @media screen and (max-width: 1660px) {
+      height: 75%;
+    }
   }
 
   // .home-stock__title
@@ -923,6 +995,7 @@
 
   &__row {
     display: flex;
+    gap: 20px;
   }
 
   // .about__col
@@ -936,6 +1009,21 @@
     }
     img {
       max-height: 880px;
+      position: relative;
+
+      @media screen and (max-width: 1660px) {
+        max-height: 550px;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background-color: $accent;
+        width: 20%;
+        height: 50px;
+      }
     }
   }
 
@@ -955,6 +1043,10 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 1660px) {
+        font-size: 15px;
       }
     }
   }
@@ -1031,6 +1123,10 @@
   &__card {
     padding: 21px 21px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 1660px) {
+      padding: 15px;
+    }
   }
 
   // .reviews__stars
@@ -1051,6 +1147,10 @@
 
   &__name {
     font-size: 18px;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 16px;
+    }
   }
 
   // .reviews__date
@@ -1059,6 +1159,10 @@
     font-size: 16px;
     color: rgba($color: $mainColor, $alpha: 0.7);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 14px;
+    }
   }
 
   // .reviews__text
@@ -1066,24 +1170,26 @@
   &__text {
     font-size: 16px;
     line-height: 150%;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 14px;
+    }
   }
 
   .reviews-button-next {
     position: absolute;
-    right: 23%;
+    right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: 1px solid #e6e3dd;
-    background: #fff;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fafafa;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba($color: $accent, $alpha: 0.1);
 
     &::after {
       font-size: 14px;
-      color: $mainColor;
+      color: $accent;
     }
   }
 }
@@ -1126,6 +1232,11 @@
         width: 10px;
         background-color: rgba($color: $mainColor, $alpha: 1);
       }
+
+      @media screen and (max-width: 1660px) {
+        height: 60px;
+        font-size: 16px;
+      }
     }
 
     // .spollers__body
@@ -1165,6 +1276,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1660px) {
+      img {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   // .contact__map

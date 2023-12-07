@@ -4179,10 +4179,6 @@
             autoHeight: false,
             speed: 800,
             loop: true,
-            autoplay: {
-                delay: 6e3,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -4212,6 +4208,29 @@
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoHeight: true
+                },
+                485: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 60
+                },
+                1660: {
+                    slidesPerView: 4,
+                    spaceBetween: 60
+                }
+            },
             on: {}
         });
         if (document.querySelector(".home-stock__slider")) new swiper_core_Swiper(".home-stock__slider", {
@@ -4223,10 +4242,6 @@
             autoHeight: false,
             speed: 800,
             loop: true,
-            autoplay: {
-                delay: 3e3,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -4254,6 +4269,29 @@
             },
             navigation: {
                 nextEl: ".reviews-button-next "
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoHeight: true
+                },
+                485: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1660: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
             },
             on: {}
         });

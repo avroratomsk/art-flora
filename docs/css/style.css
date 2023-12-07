@@ -436,7 +436,7 @@ rect {
 .footer__grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   padding-bottom: 29px;
 }
@@ -1189,6 +1189,7 @@ rect {
 
 .catalog__item--third .catalog__subtitle {
   margin-bottom: 10px;
+  text-align: right;
 }
 
 .catalog__item--fourth {
@@ -1442,10 +1443,24 @@ rect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 
 .about__col img {
   max-height: 880px;
+  position: relative;
+}
+
+.about__col img::before,
+.about__col img::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #b25f68;
+  width: 20%;
+  height: 50px;
 }
 
 .about__title {
@@ -1550,7 +1565,7 @@ rect {
 
 .reviews .reviews-button-next {
   position: absolute;
-  right: 23%;
+  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,18 +1575,15 @@ rect {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  border: 1px solid #e6e3dd;
-  background: #fff;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fafafa;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(178, 95, 104, 0.1);
 }
 
 .reviews .reviews-button-next::after {
   font-size: 14px;
-  color: #4d6469;
+  color: #b25f68;
 }
 
 .faq {
@@ -2852,6 +2864,164 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 1825px) {
+  .catalog__item--third {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .header-top__link {
+    padding: 25px 12px;
+    font-size: 15px;
+  }
+
+  .header-top__icon svg {
+    width: 17px;
+  }
+
+  .footer__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .footer__list li a {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .footer__link {
+    font-size: 14px;
+  }
+
+  .footer__contact--item {
+    font-size: 14px;
+  }
+
+  .footer__bottom {
+    padding: 15px 0px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .footer__author {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    margin-left: 170px;
+  }
+
+  .aside-menu {
+    width: 170px;
+  }
+
+  .aside-menu__link {
+    margin: 10px 10px;
+  }
+
+  .index-slider .swiper-slide {
+    height: 550px;
+  }
+
+  .index-slider__title {
+    font-size: 60px;
+  }
+
+  .index-slider__button {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .section__link {
+    font-size: 16px;
+  }
+
+  .catalog__item--second .catalog__image {
+    right: -20%;
+  }
+
+  .catalog__item--third .catalog__image {
+    height: calc(100% - 30px);
+    bottom: 70%;
+    left: 50%;
+    -webkit-transform: translateY(50%) rotate(-90deg);
+        -ms-transform: translateY(50%) rotate(-90deg);
+            transform: translateY(50%) rotate(-90deg);
+  }
+
+  .catalog__item--fourth .catalog__image {
+    height: calc(100% - 80px);
+    bottom: 30%;
+    right: 30%;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  .catalog__item--fourth {
+    padding: 20px;
+  }
+
+  .catalog__subtitle {
+    font-size: 13px;
+  }
+
+  .blog__title {
+    font-size: 30px;
+  }
+
+  .home-stock__image {
+    height: 75%;
+  }
+
+  .about__col img {
+    max-height: 550px;
+  }
+
+  .about__text p {
+    font-size: 15px;
+  }
+
+  .reviews__card {
+    padding: 15px;
+  }
+
+  .reviews__name {
+    font-size: 16px;
+  }
+
+  .reviews__date {
+    font-size: 14px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+  }
+
+  .faq .spollers__title {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .contact__item img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contact__item p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .section__title {
+    font-size: 27px;
   }
 }
 

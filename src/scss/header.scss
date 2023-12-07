@@ -59,6 +59,11 @@
     &:hover {
       color: rgba($color: $accent, $alpha: 1);
     }
+
+    @media screen and (max-width: 1660px) {
+      padding: 25px 12px;
+      font-size: 15px;
+    }
   }
 
   // .header-top__right
@@ -85,6 +90,10 @@
     svg {
       fill: $mainColor;
       transition: $animation_speed;
+
+      @media screen and (max-width: 1660px) {
+        width: 17px;
+      }
     }
 
     &:hover {
