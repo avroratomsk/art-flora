@@ -71,85 +71,12 @@
   &__right {
   }
 
-  // .header-top__action
-
-  &__action {
-    display: flex;
-    align-items: center;
+  // .header-top__btn
+  &__btn {
+    width: 210px;
+    height: 50px;
+    background-color: $mainColor;
+    color: $bodyColor;
+    font-size: 16px;
   }
-
-  // .header-top__icon
-
-  &__icon {
-    position: relative;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    svg {
-      fill: $mainColor;
-      transition: $animation_speed;
-
-      @media screen and (max-width: 1660px) {
-        width: 17px;
-      }
-    }
-
-    &:hover {
-      svg {
-        fill: $accent;
-      }
-    }
-  }
-}
-
-#favorit_link {
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 100%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $accent;
-  }
-}
-
-.submenu-item {
-}
-.sub-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 200px;
-  z-index: 99;
-  transform: translateY(100px);
-  pointer-events: none;
-  opacity: 0;
-  background-color: $bodyColor;
-  box-shadow: 0px 4px 10px rgba($color: $mainColor, $alpha: 0.2);
-  border-top: 1px solid rgba($color: $mainColor, $alpha: 0.2);
-  transition: $animation_speed;
-
-  // .sub-menu__item
-
-  &__item {
-  }
-
-  // .sub-menu__link
-
-  &__link {
-    display: flex;
-    padding: 10px 20px;
-    font-size: 15px;
-    transition: $animation_speed;
-
-    &:hover {
-      background-color: rgba($color: $mainColor, $alpha: 0.1);
-    }
-  }
-}
-.btn {
 }
