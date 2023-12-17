@@ -3,7 +3,7 @@
   @@include('html/_head.htm',{ "title":"Главная" })
 
   <body>
-    <div class="aside-menu">
+    <!-- <div class="aside-menu">
       <div class="aside-menu__inner">
         <a href="#" class="aside-menu__logo">
           <img src="@img/logo.png" alt="Logo" />
@@ -19,41 +19,78 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
         <div class="index-slider">
           <div class="index-slider__container">
-            <div class="index-slider__inner">
+            <div class="index-slider__grid">
               <div class="index-slider__slider swiper">
                 <div class="index-slider__wrapper swiper-wrapper">
-                  <div class="index-slider__slide swiper-slide">
-                    <img src="@img/index-slider-1.png" alt="" class="index-slider__image" />
-                    <div class="index-slider__content">
-                      <h2 class="index-slider__title">Скидка на первый заказ 500 руб.</h2>
-                      <p class="index-slider__subtitle">
-                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
-                        менее осмысленного текста рыбы на русском языке
-                      </p>
-                      <a href="#" class="index-slider__button" target="_blank">Узнать подробнее</a>
-                    </div>
+                  <div class="index-slider__slide swiper-slide" style="background-image: url(../img/banner-ng.webp)">
+                    <h1 class="index-slider__title">Цветы и букеты в Иркутске с доставкойasdasdasd</h1>
+                    <p class="index-slider__subtitle">
+                      Всегда свежие цветы и букеты от салона цветов "ARTFLORA" с доставкой получателю в день заказ
+                    </p>
+                    <a href="#" class="index-slider__btn">Выбрать букет</a>
                   </div>
-                  <div class="index-slider__slide swiper-slide">
-                    <img src="@img/image-banner-1.jpg" alt="" class="index-slider__image" />
-                    <div class="index-slider__content">
-                      <h2 class="index-slider__title">Скидка на первый заказ 500 руб.</h2>
-                      <a href="#" class="index-slider__button">Узнать подробнее</a>
-                    </div>
+                  <div class="index-slider__slide swiper-slide" style="background-image: url(../img/slide-1.jpg)">
+                    <h1 class="index-slider__title">Цветы и букеты в Иркутске с доставкой</h1>
+                    <p class="index-slider__subtitle">
+                      Всегда свежие цветы и букеты от салона цветов "ARTFLORA" с доставкой получателю в день заказ
+                    </p>
+                    <a href="#" class="index-slider__btn">Выбрать букет</a>
                   </div>
                 </div>
-                <div class="index-slider__controls">
-                  <button type="button" class="swiper-button-prev index-button-prev"></button>
-                  <a href="" class="index-slider__flower">
-                    <img src="@img/icon/i-flower.svg" alt="" />
-                  </a>
-                  <button type="button" class="swiper-button-next index-button-next"></button>
+                <div class="swiper-button-prev index-slider-prev"></div>
+                <div class="swiper-button-next index-slider-next"></div>
+                <div class="swiper-pagination index-slider-pagination"></div>
+              </div>
+              <div class="index-slider__grid-col">
+                <a href="#" class="index-slider__item">
+                  <img src="@img/banner.jpg" alt="" title="" />
+                  <p class="index-slider__item-title">Розы</p>
+                </a>
+                <a href="#" class="index-slider__item">
+                  <img src="@img/type-bouqets.jpg" alt="" title="" />
+                  <p class="index-slider__item-title">Цветы по поводу</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantage">
+          <div class="advantage__container">
+            <div class="advantage__grid">
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <img src="@img/icon/i-car.svg" alt="" />
                 </div>
+                <p class="advantage__title">Быстрая доставка</p>
+                <p class="advantage__subtitle">Оперативная доставка цветов и букетов в день обращения</p>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <img src="@img/icon/i-flowers.svg" alt="" />
+                </div>
+                <p class="advantage__title">Свежие цветы</p>
+                <p class="advantage__subtitle">В наших салонах всегда свежесрезанные цветы самого лучшего качества</p>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <img src="@img/icon/i-florist.svg" alt="" />
+                </div>
+                <p class="advantage__title">Опытные флористы</p>
+                <p class="advantage__subtitle">Профессионально подберут букет или композицию</p>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__icon">
+                  <img src="@img/icon/i-coin.svg" alt="" />
+                </div>
+                <p class="advantage__title">Доступные цены</p>
+                <p class="advantage__subtitle">Всегда доступные цены на весь ассортимент</p>
               </div>
             </div>
           </div>
@@ -63,8 +100,9 @@
           <div class="section__container">
             <div class="section__inner">
               <div class="section__top">
+                <div class="line-left"></div>
                 <h2 class="section__title">Популярное</h2>
-                <a href="#" class="section__link"> Смотреть все </a>
+                <div class="line-right"></div>
               </div>
               <div class="section__slider swiper">
                 <div class="section__wrapper swiper-wrapper">
@@ -292,6 +330,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
+              <a href="#" class="section__btn">Посмотреть популярные букеты</a>
             </div>
           </div>
         </div>
@@ -300,8 +339,9 @@
           <div class="section__container">
             <div class="section__inner">
               <div class="section__top">
+                <div class="line-left"></div>
                 <h2 class="section__title">Новинки</h2>
-                <a href="#" class="section__link"> Смотреть все </a>
+                <div class="line-right"></div>
               </div>
               <div class="section__slider swiper">
                 <div class="section__wrapper swiper-wrapper">
@@ -529,39 +569,67 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
+              <a href="#" class="section__btn">Посмотреть популярные букеты</a>
             </div>
           </div>
         </div>
 
         <div class="catalog">
           <div class="catalog__container">
-            <div class="catalog__inner">
-              <div class="section__top">
-                <h2 class="section__title">Каталог</h2>
-                <a href="#" class="section__link">Все букеты</a>
-              </div>
-              <div class="catalog__grid">
-                <a href="#" class="catalog__item catalog__item--first">
-                  <p class="catalog__subtitle">Букеты из крассных роз</p>
-                  <p class="catalog__title">Розы</p>
-                  <img src="@img/catalog-rose.png" alt="" class="catalog__image" />
-                </a>
-                <a href="#" class="catalog__item catalog__item--second">
-                  <p class="catalog__title">Гвоздики</p>
-                  <p class="catalog__subtitle">Букеты из свежих гвоздик</p>
-                  <img src="@img/catalog-gvozdika.png" alt="" class="catalog__image" />
-                </a>
-                <a href="#" class="catalog__item catalog__item--third">
-                  <p class="catalog__subtitle">Букеты из свежих ромашек</p>
-                  <p class="catalog__title">Ромашки</p>
-                  <img src="@img/catalog-daisy.png" alt="" class="catalog__image" />
-                </a>
-                <a href="#" class="catalog__item catalog__item--fourth">
-                  <p class="catalog__title">Хризантемы</p>
-                  <p class="catalog__subtitle">Букеты из свежих хризантем</p>
-                  <img src="@img/catalog-hrizantema.png" alt="" class="catalog__image" />
-                </a>
-              </div>
+            <div class="section__top">
+              <div class="line-left"></div>
+              <h2 class="section__title">Каталог</h2>
+              <div class="line-right"></div>
+            </div>
+            <div class="catalog__grid">
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">34</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Розы</h3>
+                </div>
+              </a>
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">114</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Букеты</h3>
+                </div>
+              </a>
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">14</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Повод</h3>
+                </div>
+              </a>
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">72</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Тип букета</h3>
+                </div>
+              </a>
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">4</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Игрушки</h3>
+                </div>
+              </a>
+              <a href="#" class="catalog__item item-catalog">
+                <img src="@img/catalog-1.jpg" alt="" class="item-catalog__image">
+                <div class="item-catalog__count">40</div>
+                <div class="item-catalog__content">
+                  <span class="item-catalog__underline">Категория</span>
+                  <h3 class="item-catalog__name">Подарки</h3>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -601,141 +669,50 @@
           </div>
         </div> -->
 
-        <div class="reviews">
+        <div class="reviews" style="background-image: url(../img/reviews.webp);">
           <div class="reviews__container">
             <div class="reviews__inner">
-              <div class="reviews__slider">
+                <h2 class="section__title reviews__title">Отзывы</h2>
+              <div class="reviews__slider swiper">
                 <div class="reviews__wrapper swiper-wrapper">
                   <div class="reviews__slide swiper-slide">
                     <div class="reviews__card">
-                      <div class="reviews__stars">
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                      </div>
-                      <p class="reviews__name">Николай</p>
-                      <p class="reviews__date">06.12.23</p>
                       <p class="reviews__text">
                         Отличная студия цветов, огромнейший выбор. Хотелось бы отметить прекрасных сотрудниц. Аня,
                         спасибо за Ваш профессионализм, консультацию и организацию доставки цветов. Всё супер! Всё
                         вовремя!Все как хотели! Третий день рад ...
                       </p>
+                      <p class="reviews__name">Иван</p>
                     </div>
                   </div>
                   <div class="reviews__slide swiper-slide">
                     <div class="reviews__card">
-                      <div class="reviews__stars">
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                      </div>
-                      <p class="reviews__name">Николай</p>
-                      <p class="reviews__date">06.12.23</p>
                       <p class="reviews__text">
                         Отличная студия цветов, огромнейший выбор. Хотелось бы отметить прекрасных сотрудниц. Аня,
                         спасибо за Ваш профессионализм, консультацию и организацию доставки цветов. Всё супер! Всё
                         вовремя!Все как хотели! Третий день рад ...
                       </p>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__card">
-                      <div class="reviews__stars">
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                      </div>
-                      <p class="reviews__name">Николай</p>
-                      <p class="reviews__date">06.12.23</p>
-                      <p class="reviews__text">
-                        Отличная студия цветов, огромнейший выбор. Хотелось бы отметить прекрасных сотрудниц. Аня,
-                        спасибо за Ваш профессионализм, консультацию и организацию доставки цветов. Всё супер! Всё
-                        вовремя!Все как хотели! Третий день рад ...
-                      </p>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__card">
-                      <div class="reviews__stars">
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                      </div>
-                      <p class="reviews__name">Николай</p>
-                      <p class="reviews__date">06.12.23</p>
-                      <p class="reviews__text">
-                        Отличная студия цветов, огромнейший выбор. Хотелось бы отметить прекрасных сотрудниц. Аня,
-                        спасибо за Ваш профессионализм, консультацию и организацию доставки цветов. Всё супер! Всё
-                        вовремя!Все как хотели! Третий день рад ...
-                      </p>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__card">
-                      <div class="reviews__stars">
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                        <img src="@img/icon/i-star.svg" alt="" />
-                      </div>
-                      <p class="reviews__name">Николай</p>
-                      <p class="reviews__date">06.12.23</p>
-                      <p class="reviews__text">
-                        Отличная студия цветов, огромнейший выбор. Хотелось бы отметить прекрасных сотрудниц. Аня,
-                        спасибо за Ваш профессионализм, консультацию и организацию доставки цветов. Всё супер! Всё
-                        вовремя!Все как хотели! Третий день рад ...
-                      </p>
+                      <p class="reviews__name">Иван</p>
                     </div>
                   </div>
                 </div>
+                <div class="swiper-button-prev reviews-button-prev"></div>
                 <div class="swiper-button-next reviews-button-next"></div>
               </div>
+              <a href="#" class="reviews__btn">Читать все отзывы</a>
             </div>
           </div>
         </div>
 
-        <div class="home-stock">
-          <div class="home-stock__container">
-            <div class="home-stock__inner">
-              <!-- <div class="section__top">
-                <h2 class="section__title">Акции</h2>
-                <a href="#" class="section__link">
-                  Смотреть все
-                </a>
-              </div> -->
-              <div class="home-stock__slider">
-                <div class="home-stock__wrapper swiper-wrapper">
-                  <div class="home-stock__slide swiper-slide">
-                    <img src="@img/1-a.png" alt="" class="home-stock__image" />
-                    <p class="home-stock__title">Бесплатная доставка по Иркутску</p>
-                    <a href="#" class="home-stock__btn">Подробнее</a>
-                  </div>
-                  <div class="home-stock__slide swiper-slide">
-                    <img src="@img/1-r.png" alt="" class="home-stock__image" />
-                    <p class="home-stock__title">Большая коллекция цветов</p>
-                    <a href="#" class="home-stock__btn">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <div class="about">
           <div class="about__container">
             <div class="about__inner">
               <div class="about__row">
                 <div class="about__col">
-                  <h2 class="about__title">О компании</h2>
+                  <p class="about__undertitle">Всегда свежие цветы и букеты</p>
+                  <h2 class="about__title">Интернет-магазин цветов и букетов</h2>
                   <div class="about__text">
                     <p>
                       Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem
@@ -763,21 +740,28 @@
                       версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические
                       варианты).
                     </p>
+
+                    <a href="#" class="about__btn">О нашем магазине</a>
                   </div>
                   <!-- <a href="#" class="about__link">Подробнее о нас </a> -->
                 </div>
                 <div class="about__col">
-                  <img src="@img/about-flower.webp" alt="" />
+                  <div class="about__image">
+                    <img src="@img/flower-shop.jpg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="contact">
           <div class="contact__container">
             <div class="contact__inner">
               <div class="section__top">
-                <h2 class="section__title">Cвязаться любым удобным способом</h2>
+                <div class="line-left"></div>
+                <h2 class="section__title contact__title">Cвязаться любым удобным способом</h2>
+                <div class="line-right"></div>
               </div>
               <div class="contact__grid">
                 <div class="contact__item">
@@ -797,11 +781,11 @@
                   <p>Частые вопросы</p>
                 </div>
               </div>
-              <div class="contact__map">
-                <img src="@img/map.jpeg" alt="" />
-              </div>
             </div>
           </div>
+        </div>
+        <div class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afe2db880251e99091f27858413c1ab9b944d271271a6c8b513565ed95c12576b&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
         </div>
       </main>
       @@include('html/_footer.htm',{})
