@@ -7,6 +7,8 @@
 //&display=swap - добавить при подключении через плагин
 @import url(https://fonts.googleapis.com/css?family=Forum:regular&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
 
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
@@ -16,7 +18,9 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Josefin Sans", sans-serif;
+// $fontFamily: "Josefin Sans", sans-serif;
+// $fontFamily: 'Bebas Neue', sans-serif;
+$fontFamily: 'Comfortaa', sans-serif;
 $secondaryFont: "Forum", serif;
 
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета

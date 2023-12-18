@@ -1,82 +1,248 @@
 .header {
+
   // .header__top
 
   &__top {
   }
-}
-.header-top {
-  // .header-top__container
+
+  // .header__container
 
   &__container {
   }
 
-  // .header-top__inner
+  // .header__middle
 
-  &__inner {
+  &__middle {
+  }
+
+  // .header__bottom
+
+  &__bottom {
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
+    border-top: 1px solid #e5e5e5;
+    background-color: #f8f8f8;
+  }
+}
+
+
+.top-header {
+  border-bottom: 1px solid rgba($color: $mainColor, $alpha: .2);
+
+  // .top-header__inner
+  &__inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.2);
   }
 
-  // .header-top__left
-
-  &__left {
-  }
-
-  // .header-top__nav
+  // .top-header__nav
 
   &__nav {
     display: flex;
     align-items: center;
-  }
 
-  // .header-top__item
 
-  &__item {
-    position: relative;
+    a{
+      display: flex;
+      padding: 10px 0px;
+      font-size: 13px;
+      transition: $animation_speed;
 
-    &:hover {
-      .sub-menu {
-        opacity: 1;
-        pointer-events: all;
-        transform: translateY(0px);
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+
+      &:hover{
+        color: $accent;
       }
     }
   }
 
-  // .header-top__link
+  // .top-header__socials
 
-  &__link {
+  &__socials {
     display: flex;
-    color: $mainColor;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 35px 15px;
+    align-items: center;
+
+    
+    a{
+      display: flex;
+
+      img{
+        width: 20px;
+        height: 20px;
+        opacity: .7;
+        transition: $animation_speed;
+      }
+
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+
+      &:hover{
+        img{
+          opacity: .9;
+        }
+      }
+    }
+  }
+
+  // .top-header__login
+  &__login{
+    display: flex;
+    align-items: center;
+
+    img{
+      opacity: .6 !important;
+    }
+
+    span{
+      margin-left: 10px;
+    }
+  }
+
+}
+
+.middle-header {
+  padding: 10px 0px;
+
+  // .middle-header__container
+
+  &__container {
+  }
+
+  // .middle-header__inner
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .middle-header__logo
+
+  &__logo {
+
+    img{
+      width: 86px;
+    }
+  }
+
+  // .middle-header__search
+  &__search{
+    width: clamp(290px, 70vw, 550px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba($color: $mainColor, $alpha: .3);
+    overflow: hidden;
+    border-radius: 5px;
+
+    input[type="search"]{
+      width: 100%;
+      height: 100%;
+      padding: 0px 20px;
+      outline: none;
+
+      &::placeholder{
+        color: rgba($color: $mainColor, $alpha: .5);
+      }
+    }
+
+    button[type="submit"]{
+      width: 50px;
+      height: 100%;
+
+    }
+  }  
+
+  // .middle-header__btn
+  &__btn{
+    width: 220px;
+    height: 50px;
+    background-color: $accent;
+    color: $whiteFont;
+    font-size: 15px;
+    border-radius: 5px;
     transition: $animation_speed;
 
-    &:hover {
-      color: rgba($color: $accent, $alpha: 1);
-    }
-
-    @media screen and (max-width: 1660px) {
-      padding: 25px 12px;
-      font-size: 15px;
+    &:hover{
+      background-color: #a13e4a;
     }
   }
 
-  // .header-top__right
+  // .middle-header__info
+  &__info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 
-  &__right {
+    a{
+      font-size: 17px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      line-height: 120%;
+      transition: $animation_speed;
+
+      &:hover{
+        color: $accent;
+      }
+    }
+
+    p{
+      font-size: 12px;
+    }
   }
 
-  // .header-top__btn
-  &__btn {
-    width: 210px;
-    height: 50px;
-    background-color: $mainColor;
-    color: $bodyColor;
-    font-size: 16px;
+  // .middle-header__action
+
+  &__action {
+    display: flex;
+    align-items: center;
+    
+    button{
+      padding: 20px;
+    }
+  }
+
+  // .middle-header__favorit
+
+  &__favorit {
+  }
+
+  // .middle-header__cart
+
+  &__cart {
   }
 }
+
+
+.bottom-header {
+
+  // .bottom-header__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    a{
+      display: flex;
+      padding: 15px 0px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      color: $mainColor;
+      transition: $animation_speed;
+
+      &:not(:last-child){
+        margin-right: 60px;
+      }
+
+      &:hover{
+        background-color: $accent;
+        color: $whiteFont;
+      }
+    }
+  }
+}
+
