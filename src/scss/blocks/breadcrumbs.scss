@@ -1,0 +1,18 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 40px 0px;
+
+  // .breadcrumbs__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child)::after {
+      content: '—';
+      display: block;
+      margin: 0px 7px;
+    }
+  }
+}
