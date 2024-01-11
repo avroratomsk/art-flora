@@ -80,3 +80,28 @@ if (buttonsEnroll) {
   })
 }
 
+
+const buttonsTab = document.querySelectorAll('button[data-id]');
+const contentTab = document.querySelectorAll('.specification-product__info');
+
+if(buttonsTab){
+  buttonsTab.forEach(btn => {
+    btn.addEventListener('click', switchTab);
+  })
+}
+
+function switchTab(e){
+
+  buttonsTab.forEach(btn => {
+    btn.classList.remove('_active');
+  })
+  this.classList.add('_active');
+
+  if(contentTab){
+    contentTab.forEach(item => {
+      item.classList.remove('_show');
+    });
+  }
+  let elemInfo = document.getElementById(this.dataset.id);
+  elemInfo.classList.add('_show');
+}

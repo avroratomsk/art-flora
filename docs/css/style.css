@@ -2218,7 +2218,7 @@ Select c dropdown на JS
 }
 
 .product {
-  padding: 50px 0px;
+  padding: 0px 0px 50px;
 }
 
 .product__content {
@@ -2530,7 +2530,7 @@ Select c dropdown на JS
 .specification-product__header {
   padding: 20px 0px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #4d6469;
+  border-bottom: 1px solid rgba(77, 100, 105, 0.2);
 }
 
 .specification-product__header button {
@@ -2558,7 +2558,7 @@ Select c dropdown на JS
 .specification-product__info h5 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .specification-product__info ul li {
@@ -2613,10 +2613,46 @@ Select c dropdown на JS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 40px;
 }
 
 .specification-product__payment img {
   height: 30px;
+  margin-bottom: 10px;
+}
+
+.specification-product__payment div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specification-product__payment div span {
+  font-size: 12px;
+}
+
+.similar-product {
+  padding-top: 100px;
+}
+
+.similar-product__title {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.similar-product__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 40px;
 }
 
 .swiper {
