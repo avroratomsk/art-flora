@@ -14,12 +14,25 @@
           <div class="catalog-page__inner">
             <div class="catalog-page__aside aside-catalog">
               <form action="" class="aside-catalog__form">
-                <fieldset class="aside-catalog__filter filter-catalog">
+                <fieldset class="aside-catalog__filter filter-catalog _show">
                   <span class="filter-catalog__name">Цена</span>
-                  <div class="filter-catalog__rows">
-
+                  <div class="filter-catalog__rows price-filter">
+                    <div class="price-filter__rows">
+                      <div class="price-filter__numbers">
+                        <div class="price-filter__number">
+                          <span>От:</span>
+                          <input type="number" name="min" id="min" placeholder="3000" value="">
+                        </div>
+                        <span class="price-filter__line"></span>
+                        <div class="price-filter__number">
+                          <span>До:</span>
+                          <input type="number" name="max" id="max" placeholder="5000000" value="">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </fieldset>
+
                 <fieldset class="aside-catalog__filter filter-catalog">
                   <span class="filter-catalog__name">Тип букета</span>
                   <div class="filter-catalog__rows">
@@ -84,7 +97,7 @@
             <div class="catalog-page__content content-catalog">
               <div class="content-catalog__filter">
                 <span>Сортировка:</span>
-                <a href="#" data-sort="all">Все товары</a>
+                <a href="#" data-sort="all" class="_active">Все товары</a>
                 <a href="#" data-sort="asc">Сначало недорогие</a>
                 <a href="#" data-sort="desc">Сначало дорогие</a>
                 <a href="#" data-sort="populate">ХИТ</a>
@@ -556,6 +569,7 @@
                   </div>
                 </div>
               </div>
+              @@include('html/_pagging.htm',{})
             </div>
           </div>
         </div>

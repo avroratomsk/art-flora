@@ -27,6 +27,7 @@
 }
 
 .aside-catalog {
+  flex: 1 1 25%;
 
   // .aside-catalog__form
 
@@ -41,6 +42,55 @@
   &__filter {}
 }
 
+.price-filter {
+
+  // .price-filter__rows
+
+  &__rows {}
+
+  // .price-filter__numbers
+
+  &__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    input[type="number"] {
+      height: 40px;
+      outline: none;
+      width: 100px;
+      text-align: center;
+      font-size: 14px;
+      border-left: 1px solid rgba($color: $mainColor, $alpha: .4);
+    }
+  }
+
+  // .price-filter__number
+  &__number {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba($color: $mainColor, $alpha: .4);
+    overflow: hidden;
+
+    span {
+      display: block;
+      padding: 0px 10px;
+    }
+  }
+
+  // .price-filter__line
+
+  &__line {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: rgba($color: $mainColor, $alpha: 1.0);
+  }
+}
+
+
 .filter-catalog {
   padding: 20px 20px 20px 20px;
   background: #fcfcfc;
@@ -48,6 +98,16 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &._show {
+    .filter-catalog__rows {
+      display: block;
+    }
+
+    .filter-catalog__name::after {
+      transform: rotate(0deg);
+    }
   }
 
   // .filter-catalog__name
@@ -129,6 +189,8 @@
 
   &__btn {
     font-size: 12px;
+    margin-top: 10px;
+    color: $accent;
   }
 
   // .filter-catalog__reset
@@ -156,10 +218,21 @@
 
   &__filter {
     margin-bottom: 30px;
-
     display: flex;
     align-items: center;
     gap: 40px;
     font-size: 13px;
+
+    a {
+      transition: $animation_speed;
+
+      &:hover {
+        color: $accent;
+      }
+
+      &._active {
+        color: $accent;
+      }
+    }
   }
 }

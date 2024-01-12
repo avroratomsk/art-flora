@@ -105,3 +105,14 @@ function switchTab(e){
   let elemInfo = document.getElementById(this.dataset.id);
   elemInfo.classList.add('_show');
 }
+
+const filterCatalogItem = document.querySelectorAll('.filter-catalog__name');
+
+if(filterCatalogItem){
+  filterCatalogItem.forEach(item => {
+    item.addEventListener('click', function(e) {
+      let parent = this.closest('.filter-catalog');
+      parent.classList.toggle('_show');
+    })
+  })
+}

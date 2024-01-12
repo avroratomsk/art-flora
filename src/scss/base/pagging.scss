@@ -2,18 +2,33 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 70px;
+
 	// .pagging__arrow
-	&__arrow {
-	}
+	&__arrow {}
+
 	// .pagging__list
 	&__list {
 		display: flex;
-		li {
-		}
+		align-items: center;
+		gap: 20px;
+
+		li {}
 	}
+
 	// .pagging__item
 	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border: 1px solid rgba($color: $mainColor, $alpha: .6);
+		border-radius: 5px;
+
 		&._active {
+			background-color: $accent;
+			color: $whiteFont;
 		}
 	}
 }
